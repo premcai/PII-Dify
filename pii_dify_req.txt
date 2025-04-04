@@ -1,0 +1,11 @@
+Flask
+waitress
+pymongo
+presidio-analyzer
+presidio-anonymizer
+flair
+torch
+transformers
+sentencepiece
+regex
+pypdf2
