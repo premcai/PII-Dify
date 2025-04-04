@@ -43,7 +43,8 @@ mongo_handler = MongoHandler(config)
 # Initialize the Presidio AnalyzerEngine and Flair model once at startup
 analyzer = AnalyzerEngine()
 analyzer.registry.add_recognizer(SpacyRecognizer())
-flair_model = SequenceTagger.load("flair/ner-english-large")
+# Smaller Flair NER model
+flair_model = SequenceTagger.load("ner")
 
 @app.route("/mask", methods=["POST"])
 def mask_data():
